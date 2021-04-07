@@ -1,27 +1,12 @@
+import java.util.Scanner;//scanner 사용을 위한 import
 
 public class Main {
 	
 	public static void main(String[] args) {
-		//자바 변수는 초기화하지 않으면 사용할 수 없음.
-
-		int x=5;
-
-	    int y=3;
-
-	    System.out.println(max(x,y));
+        Scanner sc=new Scanner(System.in);//입력을 위한 스캐너 생성
+        System.out.print("정수를 입력하세요 : ");
+        int x=sc.nextInt();//nextInt로 다음에 입력받게 되는 정수를 x에 저장
+        System.out.println("입력된 수는 "+x+"입니다");//x 출력
+        sc.close();
 	}
-
-	  //함수를 다른 곳에서도 호출하려면 static 키워드 필요.
-
-	  static int max(int a,int b){
-
-	  	return a>b? a:b;
-
-	  }
-
-	  //substring
-
-	  //Math.pow()=>거듭제곱
-	
-	
 }
