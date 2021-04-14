@@ -1,10 +1,11 @@
 public class Main {
 	
-	public static char getLastCharacter(String str) {
-		return str.charAt(str.length()-1);
+	public static int makeFibonacci(int i) {
+		if(i==1||i==2) return 1;
+		else return makeFibonacci(i-2)+makeFibonacci(i-1);
 	}
 	
 	public static void main(String[] args) {
-			System.out.println("campus의 마지막 글자는 "+getLastCharacter("campus")+"입니다.");
+			System.out.println(makeFibonacci(8));
 	}
 }
