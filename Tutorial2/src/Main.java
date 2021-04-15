@@ -10,6 +10,17 @@ public class Main {
 		}
 		int avg=sum/100;
 		
-		System.out.print(avg);//println=>자동 줄바꿈.
+		System.out.println("average = "+avg);//println=>자동 줄바꿈.
+		
+		int [][]multiArray=new int[10][10];
+		for(int i=0;i<10;i++)
+		{
+			for(int j=0;j<10;j++)
+			{
+				multiArray[i][j]=(int)(Math.random()*10);
+				System.out.print(multiArray[i][j]+" ");
+			}
+			System.out.println();
+		}
 	}
 }
