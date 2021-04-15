@@ -1,11 +1,15 @@
 public class Main {
 	
-	public static int makeFibonacci(int i) {
-		if(i==1||i==2) return 1;
-		else return makeFibonacci(i-2)+makeFibonacci(i-1);
-	}
-	
 	public static void main(String[] args) {
-			System.out.println(makeFibonacci(8));
+		//Scanner sc=new Scanner(System.in);//ctrl+shift+O를 눌러 자동 import
+		int [] array=new int[100];//정수 배열을 array를 만들겠다. 이 새로운 변수는 정수를 담고, 크기는 100이다.
+		int sum=0;
+		for(int i=0;i<100;i++) {
+			array[i]=(int)(Math.random()*100+1);
+			sum+=array[i];
+		}
+		int avg=sum/100;
+		
+		System.out.print(avg);//println=>자동 줄바꿈.
 	}
 }
