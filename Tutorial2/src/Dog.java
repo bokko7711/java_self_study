@@ -1,6 +1,10 @@
 
 public class Dog extends Animal{
 
+	//void show() {
+	//오류발생
+	//}
+	
 	@Override
 	void bark() {
 		// TODO Auto-generated method stub
