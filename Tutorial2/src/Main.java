@@ -1,24 +1,19 @@
-public class Main implements Base,Plus{
-	
-	public void show() {
-		System.out.println("show function from Base");
-	}
-	public void play() {
-		System.out.println("play function from Base");
-	}
-	public void pause() {
-		System.out.println("pause function from Plus");
-	}
-	public void stop() {
-		System.out.println("stop function from Plus");
-	}
+import java.util.Scanner;
+
+public class Main{
 	
 	public static void main(String[] args) {
-		Main main=new Main();
+		int switcher;
+		Scanner sc=new Scanner(System.in);
+		switcher=sc.nextInt();
+		Fruit fruit;
+		if (switcher==1) {
+			fruit=new Peach();
+		}
+		else {
+			fruit=new Banana();
+		}
 		
-		main.show();
-		main.play();
-		main.pause();
-		main.stop();
+		fruit.show();
 	}
 }
